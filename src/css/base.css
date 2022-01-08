@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Henriette';
+  src: url('../assets/fonts/Henriette/henriette-bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basic sans SF';
+  src: url('../assets/fonts/BasicSans/Basic-sans-sf-regular.TTF') format('ttf');
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basic sans SF';
+  src: url('../assets/fonts/BasicSans/Basic-sans-sf-light.TTF') format('ttf');
+  font-weight: light;
+  font-style: normal;
+}
+
 :root {
   --dark-blue: #545871;
 
@@ -10,25 +31,102 @@
 
   --pink: #f7eceb;
   --dark-pink: #e6dbda;
+  --white: #ffffff;
+
+  --max-width: 1249px;
+  --padding-section: 5vw;
+  --separator-section: 7rem;
+
+  --border-radius-card: 10px;
+  --border-radius-image: 5px;
 }
 
-@font-face {
-  font-family: 'Gibson';
-  src: url('../assets/Font/Gibson/Gibson-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-@font-face {
-  font-family: 'Gibson';
-  src: url('../assets/Font/Gibson/Gibson-SemiBold.ttf') format('ttf');
-  font-weight: semibold;
-  font-style: normal;
+body {
+  font-size: 16px;
+  font-family: 'Basic sans SF';
+  font-weight: 300;
 }
 
-@font-face {
-  font-family: 'Gibson';
-  src: url('../assets/Font/Gibson/Gibson-Bold.ttf') format('ttf');
-  font-weight: bold;
-  font-style: normal;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Henriette';
+}
+
+h1 {
+  font-size: 3.375rem;
+}
+
+h2 {
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
+  color: var(--dark-blue);
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+}
+
+a,
+p {
+  font-size: clamp(1rem, 0.9vw + 1rem, 1.5rem);
+  line-height: 1.4;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.button {
+  padding: 0.75rem 3.188rem;
+  border-radius: 2rem;
+  font-size: 20px;
+  text-align: center;
+  max-width: 8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.button--white {
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+
+.button--white:hover {
+  background-color: var(--grayish-light);
+}
+
+.button--dark-blue {
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+.button--dark-blue:hover {
+  color: var(--dark-blue);
+  background-color: var(--grayish-light);
+}
+
+.button--pink {
+  color: var(--dark-blue);
+  background-color: var(--red-light);
+}
+
+.button--pink:hover {
+  background-color: var(--grayish-light);
 }

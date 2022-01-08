@@ -1,0 +1,6 @@
+.footer {
+  padding: var(--separator-section) var(--padding-section);
+  background-color: var(--pink);
+  display: grid;
+  place-content: center;
+}
