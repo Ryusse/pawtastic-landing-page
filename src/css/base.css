@@ -130,3 +130,11 @@ img {
 .button--pink:hover {
   background-color: var(--grayish-light);
 }
+
+.button--email {
+  color: var(--dark-blue);
+  text-decoration: underline;
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
+  font-weight: 700;
+  font-family: 'Henriette';
+}

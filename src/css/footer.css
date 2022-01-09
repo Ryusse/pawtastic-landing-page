@@ -4,3 +4,24 @@
   display: grid;
   place-content: center;
 }
+
+.footer-container {
+  display: grid;
+  gap: 1.938rem;
+}
+
+.footer-container__title {
+  text-align: center;
+  opacity: 0.3;
+}
+
+.footer-container__phone {
+  font-family: 'Henriette';
+  text-align: center;
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
+  font-weight: 700;
+}
+
+.footer-container__button {
+  justify-self: center;
+}
